@@ -37,8 +37,8 @@ This is useful in situations when a custom serialization was applied before:
 
 ``` ruby
 respond_to do |format|
-  posts = posts.as\_json(:include => :comments)
-  format.plist { render :plist => posts, :skip\_serialization => true }
+  posts = posts.as_json(:include => :comments)
+  format.plist { render :plist => posts, :skip_serialization => true }
 end
 ```
 
