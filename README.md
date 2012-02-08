@@ -33,7 +33,7 @@ end
 ```
 
 There is an additional option you can use to skip the serialization done by the gem.
-This is useful in situation when a custom serialization was already done:
+This is useful in situations when a custom serialization was applied before:
 
 ``` ruby
 respond_to do |format|
