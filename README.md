@@ -32,11 +32,32 @@ respond_to do |format|
 end
 ```
 
+There is an additional option you can use to skip the serialization done by the gem.
+This is useful in situation when a custom serialization was already done:
+
+``` ruby
+respond_to do |format|
+  posts = posts.as\_json(:include => :comments)
+  format.plist { render :plist => posts, :skip\_serialization => true }
+end
+```
+
+
+Changelog
+---------
+
+* **1.0.0** - 08.02.2012
+  * add skip\_serialization option
+  * remove old monkey path since CFPropertyList has fixes included since 2.0.17
+
+* **0.0.1** - 12.05.2011
+  * initial release
+
 
 License
 -------
 
-Copyright (c) 2011 Matthias Schmidt, [http://m-schmidt.eu/](http://m-schmidt.eu/)
+Copyright (c) 2011-2012 Matthias Schmidt, [http://m-schmidt.eu/](http://m-schmidt.eu/)
 
 CFPropertyList-rails is released under the MIT License
 

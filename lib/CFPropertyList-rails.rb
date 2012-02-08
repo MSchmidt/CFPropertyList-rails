@@ -1,4 +1,4 @@
-require 'CFPropertyList-rails/plist'
+require 'cfpropertylist'
 require 'CFPropertyList-rails/railtie'
 
 module CFPropertyList
