@@ -46,6 +46,9 @@ end
 Changelog
 ---------
 
+* **1.0.1** - 14.12.2012
+  * update dependency to CFPropertyList ~> 2.2.0
+
 * **1.0.0** - 08.02.2012
   * add skip\_serialization option
   * remove old monkey path since CFPropertyList has fixes included since 2.0.17

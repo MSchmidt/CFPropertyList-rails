@@ -12,11 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{CFPropertyList for rails3}
   s.description = %q{Binary Plist (CFPropertyList) renderer for rails3 apps.}
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.files       = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
 
-  s.add_runtime_dependency(%q<CFPropertyList>, ["= 2.0.17"])
+  s.add_runtime_dependency(%q<CFPropertyList>, ["~> 2.2.0"])
   s.add_runtime_dependency(%q<railties>, ["~> 3.0"])
 end
