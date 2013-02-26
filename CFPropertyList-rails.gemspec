@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.files       = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
 
   s.add_runtime_dependency(%q<CFPropertyList>, ["~> 2.2.0"])
-  s.add_runtime_dependency(%q<railties>, ["~> 3.0"])
+  s.add_runtime_dependency(%q<railties>, [">= 3", "< 5"])
 end
