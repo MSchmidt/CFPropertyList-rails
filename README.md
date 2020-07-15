@@ -46,6 +46,12 @@ end
 Changelog
 ---------
 
+* **1.0.3** - 15.07.2020
+  * update dependency to CFPropertyList ~> 2.3
+
+* **1.0.2** - 26.02.2013
+  * update dependency to Rails >=3, <5
+
 * **1.0.1** - 14.12.2012
   * update dependency to CFPropertyList ~> 2.2.0
 

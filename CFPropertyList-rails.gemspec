@@ -9,8 +9,9 @@ Gem::Specification.new do |s|
   s.authors     = ["Matthias Schmidt"]
   s.email       = ["mail@m-schmidt.eu"]
   s.homepage    = "https://github.com/MSchmidt/CFPropertyList-rails"
-  s.summary     = %q{CFPropertyList for rails3}
-  s.description = %q{Binary Plist (CFPropertyList) renderer for rails3 apps.}
+  s.summary     = %q{CFPropertyList for rails3/4}
+  s.description = %q{Binary Plist (CFPropertyList) renderer for rails3/4 apps.}
+  s.license     = 'MIT'
 
   s.files       = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
 
